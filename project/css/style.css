@@ -78,22 +78,6 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Rubik', sans-serif;
 */
 /*------------------------------------------------------------------------*/
-.ibg {
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.ibg img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  opacity: 0;
-  width: 0;
-  height: 0; }
-
-/*------------------------------------------------------------------------*/
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,6 +141,22 @@ font-family: 'Rubik', sans-serif;
 .header {
   background: #fafbfd;
   position: relative; }
+  .header > div {
+    position: relative;
+    z-index: 1; }
+  .header::after {
+    content: '';
+    position: absolute;
+    width: 150vw;
+    height: 100%;
+    top: 0;
+    right: 290px;
+    background: #EC5863;
+    border-radius: 30px 0px 0px 0px;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    z-index: 0; }
   .header__body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -204,9 +204,11 @@ font-family: 'Rubik', sans-serif;
   .header__burger {
     display: none; }
 
-@media (max-width: 1087px) {
+@media (max-width: 900px) {
   .header__menu {
-    margin: 0 80px 0 0; } }
+    margin: 0 80px 0 0; }
+  .header::after {
+    display: none; } }
 
 @media (max-width: 767.98px) {
   body.lock {
@@ -311,8 +313,25 @@ font-family: 'Rubik', sans-serif;
   flex: 1 1 100%; }
 
 .get-started {
+  position: relative;
   background: #fafbfd;
   padding: 40px 0 48px 0; }
+  .get-started > div {
+    position: relative;
+    z-index: 1; }
+  .get-started::after {
+    content: '';
+    position: absolute;
+    width: 150vw;
+    height: 100%;
+    top: 0;
+    right: 290px;
+    background: #EC5863;
+    border-radius: 0px 0px 0px 30px;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    z-index: 0; }
   .get-started__health-top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -393,6 +412,10 @@ font-family: 'Rubik', sans-serif;
         width: 100%;
         -o-object-fit: fill;
         object-fit: fill; } }
+
+@media (max-width: 900px) {
+  .get-started::after {
+    display: none; } }
 
 @media (max-width: 767.98px) {
   .get-started__health-top {
