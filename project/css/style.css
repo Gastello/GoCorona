@@ -644,8 +644,7 @@ font-family: 'Rubik', sans-serif;
     -ms-flex: 1 1 51%;
     flex: 1 1 51%;
     position: relative;
-    padding-bottom: 28%;
-    margin: 0 28px 0 0; }
+    padding: 0 28px 28% 28px; }
     .info-experts__video iframe {
       position: absolute;
       left: 0;

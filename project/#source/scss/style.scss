@@ -757,9 +757,8 @@
 
    &__video {
       flex: 1 1 51%;
-      position: relative;
-      padding-bottom: 28%;
-      margin: 0 28px 0 0;
+      position: relative; 
+      padding: 0 28px 28% 28px;
 
       iframe {
          position: absolute;
