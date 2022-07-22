@@ -759,14 +759,13 @@
       flex: 1 1 51%;
       position: relative; 
       padding: 0 28px 28% 28px;
-
+      width: 100%;
       iframe {
          position: absolute;
          left: 0;
          top: 0;
          height: 100%;
-         width: 100%;
-         object-fit: cover;
+         width: 100%; 
       }
    }
 }
@@ -776,9 +775,8 @@
       flex-direction: column;
       gap: 30px;
 
-      &__video {
-         padding-bottom: 56%;
-         margin: 0 28px 0 28px;
+      &__video { 
+         padding: 0 28px 56% 28px;
       }
 
       &__subtitle {

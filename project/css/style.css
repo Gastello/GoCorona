@@ -644,15 +644,14 @@ font-family: 'Rubik', sans-serif;
     -ms-flex: 1 1 51%;
     flex: 1 1 51%;
     position: relative;
-    padding: 0 28px 28% 28px; }
+    padding: 0 28px 28% 28px;
+    width: 100%; }
     .info-experts__video iframe {
       position: absolute;
       left: 0;
       top: 0;
       height: 100%;
-      width: 100%;
-      -o-object-fit: cover;
-      object-fit: cover; }
+      width: 100%; }
 
 @media (max-width: 767.98px) {
   .info-experts {
@@ -662,8 +661,7 @@ font-family: 'Rubik', sans-serif;
     flex-direction: column;
     gap: 30px; }
     .info-experts__video {
-      padding-bottom: 56%;
-      margin: 0 28px 0 28px; }
+      padding: 0 28px 56% 28px; }
     .info-experts__subtitle {
       max-width: none; } }
 
